@@ -1,0 +1,18 @@
+%overlay{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+
+
+@mixin bgimge($name){
+    // background-image: url(./../img/pictures/price/bg-light-price.jpg);
+    background-image: url($name);
+background-size: cover;
+background-position: center;
+}

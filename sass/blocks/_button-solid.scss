@@ -1,0 +1,30 @@
+.button-solid {
+    padding-left: 40px;
+    padding-right: 41px;
+  line-height: 60%;
+  font-size: 14px;
+  font-weight: 800;
+  height: 60px;
+  color: $textColor;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  border-radius: 30px;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button-solid:hover {
+  background: #000000;
+  color: #fff ;
+}
+.button-outline:hover {
+    border: 1px solid rgba(255, 255, 255, 0);
+    background: rgba(255, 255, 255, 0.2);
+  }
+  .button-outlina:focus {
+    background: #2f2f2f;
+    color: #fff ;
+  }
+  

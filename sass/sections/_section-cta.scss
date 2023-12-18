@@ -1,0 +1,70 @@
+.section-cta {
+  position: relative;
+
+  padding-top: 83px;
+  padding-bottom: 84px;
+
+  @include bgimge("./../img/pictures/main/bg-light.jpg");
+
+  &::before {
+    @extend %overlay;
+  }
+
+  // descktop
+  /* Tablet */
+  @media (max-width: 1600px) {
+    @include bgimge("./../img/pictures/main/bg-light.jpg");
+  }
+
+  /* Tablet */
+  @media (max-width: 1199px) {
+    padding-bottom: 40px;
+    padding-top: 40px;
+    @include bgimge("./../img/pictures/main/cta900.jpg");
+  }
+
+  /* Mobile */
+  @media (max-width: 899px) {
+    @include bgimge("./../img/pictures/main/cta600.jpg");
+  }
+  /* Mobile XS */
+  @media (max-width: 599px) {
+    @include bgimge("./../img/pictures/main/cta320.jpg");
+  }
+}
+
+.section-cta__content {
+  position: relative;
+  z-index: 9;
+  color: white;
+  text-align: center;
+}
+
+.section-cta__content .button {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.section-cta__title {
+  margin-bottom: 40px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1;
+
+  span {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  /* Mobile */
+  @media (max-width: 899px) {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  /* Mobile XS */
+  @media (max-width: 599px) {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+}
